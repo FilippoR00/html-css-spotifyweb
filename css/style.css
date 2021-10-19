@@ -7,6 +7,7 @@
 body{
     font-family: 'Montserrat', Arial, Helvetica;
     display: flex;
+    min-width: 400px;
 }
 
 /* sidebar  */
@@ -181,10 +182,105 @@ main header .upgrade button:hover{
     position: fixed;
     bottom: 0px;
     left: 0px;
+    background-color: #282828;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+.player-bar .section{
+    width: calc(100% / 3);
+    margin: 20px 10px;
+    color: white;
+}
 
+.player-bar .left img{
+    max-width: 35px;
+    max-height: 35px;
+    width: 10vw;
+    height: 10vw;
+}
 
+.player-bar .left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.player-bar .left .song-info{
+    color: gray;
+    font-size: 10px;
+    margin: 0px 10px;
+}
+
+.player-bar .left .save-icons{
+    color: gray;
+    font-size: 15px;
+    margin: 0px 10px;
+}
+
+.player-bar .left .song-info div:first-child{
+    font-size: 15px;
+    color: white;
+}
+
+.player-bar .center{}
+
+.player-bar .center .buttons-row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 15px;
+}
+
+.player-bar .center .buttons-row i:nth-child(3){
+    font-size: 25px;
+}
+
+.player-bar .center .song-slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.player-bar .slider{
+    width: 70%;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.player-bar .gray{
+    background-color: #5a5a5a;
+}
+
+.player-bar .white{
+    width: 20%;
+    background-color: #c1c1c1;
+    margin-top: 5px;
+    position: relative;
+    bottom: 5px;
+}
+
+.player-bar .right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    font-size: 15px;
+}
+
+.player-bar .right .slider{
+    width: 30%;
+    height: 4px;
+    border-radius: 2px;
+}
 
 @media screen and (max-width: 430px){
     .sidebar{
@@ -282,10 +378,9 @@ main header .upgrade button:hover{
 
 } */
 
-.debug .player-bar{
+/* .debug .player-bar{
     background-color: pink;
-
-}
+} */
 
 .debug main{
     background-color: lightblue;
