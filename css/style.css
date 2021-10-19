@@ -6,33 +6,107 @@
 
 body{
     font-family: 'Montserrat', Arial, Helvetica;
-    width: 200px;
-    height: 200px;
+    display: flex;
 }
 
 /* mobile first  */
 
+.sidebar{
+    width: 40px;
+    height: calc(100vh - 75px);
+}
+
+main{
+    width: calc(100vw - 40px);
+    height: calc(100vh - 75px);
+}
+
+main header .upgrade{
+    height: 75px;
+}
+
+.player-bar{
+    width: 100vw;
+    height: 75px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+/* **** debug **** */
+
+.debug .sidebar{
+    background-color: tomato;
+
+}
+
+.debug .player-bar{
+    background-color: pink;
+
+}
+
+.debug main{
+    background-color: lightblue;
+}
+
+.debug main header .upgrade{
+    background-color: lightgreen;
+}
+
+.debug main header nav{
+    background-color: lightsalmon;
+    height: 100px;
+}
 
 
 
 
 
 @media screen and (min-width: 430px) {
-    
-    body{
-        background-color: red;
+    .sidebar{
+        width: 190px;
+        height: calc(100vh - 75px);
     }
+
+    main{
+        width: calc(100vw - 190px);
+        height: calc(100vh - 75px);
+    }
+
+    /* body{
+        background-color: red;
+    } */
 }
 
 @media screen and (min-width: 530px) {
-    body{
-        background-color: green;
+    .sidebar{
+        width: 190px;
+        height: calc(100vh - 75px);
     }
+
+    main{
+        width: calc(100vw - 190px);
+        height: calc(100vh - 75px);
+    }
+
+    /* body{
+        background-color: green;
+    } */
 }
 
 @media screen and (min-width: 760px) {
-    body{
-        background-color: yellow;
+    .sidebar{
+        width: 190px;
+        height: calc(100vh - 75px);
     }
+
+    main{
+        width: calc(100vw - 190px);
+        height: calc(100vh - 75px);
+    }
+
+    /* body{
+        background-color: yellow;
+    } */
 }
 
