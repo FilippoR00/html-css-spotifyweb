@@ -146,7 +146,30 @@ body{
 }
 
 /* sezione upgrade  */
+main header .upgrade{
+    background-color: #080b12;
+    height: 75px;
+    position: relative;
+}
 
+main header .upgrade button{
+    background-color: #080b12;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    padding: 10px 30px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+main header .upgrade button:hover{
+    background-color: #151c2a;
+}
 
 
 
@@ -268,10 +291,10 @@ body{
     background-color: lightblue;
 }
 
-.debug main header .upgrade{
+/* .debug main header .upgrade{
     background-color: lightgreen;
     height: 75px;
-}
+} */
 
 .debug main header nav{
     background-color: lightsalmon;
